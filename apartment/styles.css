@@ -1,0 +1,1145 @@
+.apartment-container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-border {
+    width: 100%;
+    max-width: 1131px;
+}
+
+
+/*  Основной слайдер новостройки ЖК / квартиры  */
+
+
+.apartment-image-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment-image-wrapper {
+    background: antiquewhite;
+    width: 100%;
+    max-width: 744px;
+    height: 355px;
+    transition: 0.5s height;
+    border-radius: 30px;
+    position: relative;
+}
+
+.apartment-slider__count-of-images-count {
+    position: absolute;
+    z-index: 21;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 1131px) {
+    .apartment-slider__content {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .apartment-image-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    .apartment-image-container.content-border {
+        padding: 0;
+    }
+
+    .apartment-image-wrapper {
+        border-radius: 0;
+        background: white;
+        border-top: 1px solid rgba(42, 84, 126, 0.16);
+        border-bottom: 1px solid rgba(42, 84, 126, 0.16);
+    }
+
+    .apartment-image-container {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .apartment-slider {
+        height: 240px;
+        border-radius: 0;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+        max-width: 780px;
+        overflow: hidden;
+    }
+
+    .apartment-slider__wrapper {
+        max-width: 780px;
+        height: 240px;
+    }
+
+    .new-apartments__image__rc {
+        max-width: 780px;
+    }
+
+    .apartment-slider__button-prev,
+    .apartment-slider__button-next {
+        display: none;
+    }
+
+    .apartment-slider__mini-version {
+        display: none;
+    }
+
+    .apartment-container .header-navigation {
+        display: none;
+    }
+}
+
+
+/*  Мини карта  */
+
+
+.min-map {
+    width: 360px;
+    height: 355px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.map-and-contact-form__container {
+    display: flex;
+    gap: 20px;
+}
+
+.map-and-contact-form__container .contact-form {
+    display: none;
+}
+
+@media (max-width: 1131px) {
+    .map-and-contact-form__container .contact-form {
+        display: flex;
+    }
+}
+
+@media (max-width: 780px) {
+    .map-and-contact-form__container {
+        display: none;
+    }
+}
+
+
+/*  Информация о новостроке/квартире  */
+
+
+.apartment-info-container {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.apartment-info__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment-info {
+    width: 100%;
+    max-width: 740px;
+    padding-top: 20px;
+}
+
+.apartment-info__title__container {
+    max-width: 740px;
+}
+
+.apartment-info__title__tag {
+    padding: 4px 10px;
+    background: rgba(55, 110, 164, 0.06);
+    border-radius: 20px;
+}
+
+.apartment-info__more-info {
+    display: flex;
+    flex: 1 25%;
+    width: 100%;
+    max-width: 744px;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.apartment-info__more-info__item {
+    display: flex;
+    flex: 1 25%;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.apartment-info__more-info__item p:first-child {
+    color: rgba(17, 34, 51, 0.35);
+}
+
+@media (max-width: 1131px) {
+    .apartment-info__content .contact-form {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .apartment-info {
+        padding-top: 28px;
+    }
+
+    .apartment-info__title__tag {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    .apartment-info__more-info {
+        flex-wrap: wrap;
+    }
+
+    .apartment-info__more-info__item {
+        flex: 1 50%;
+    }
+
+    .apartment-info__more-info__item .title__medium {
+        font-family: TTCommonsRegular, sans-serif;
+    }
+
+    .apartment-info__more-info__item:first-child,
+    .apartment-info__more-info__item:nth-child(2) {
+        padding-bottom: 20px;
+    }
+
+    .apartment-info__more-info__item .title__medium {
+        font-size: 18px;
+    }
+}
+
+
+/*  Metro  */
+
+
+.apartment-info__metro {
+    display: flex;
+    margin-top: 44px;
+}
+
+.apartment-info__metro__icon-svg {
+    width: 40px;
+}
+
+.apartment-info__metro__content {
+    margin: 11px 0 0 28px;
+}
+
+.apartment-info__metro__icons {
+    display: flex;
+    margin-top: 14px;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.apartment-info__metro__icons__item {
+    display: flex;
+    gap: 12px;
+}
+
+.apartment-info__metro__icon-metro,
+.apartment-info__metro__icon-train,
+.apartment-info__metro__icon-highway,
+.apartment-info__metro__on-foot,
+.apartment-info__metro__on-car {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.metro-icon__red svg path {
+    fill: rgba(235, 87, 87, 1);
+}
+
+.metro-icon__green svg path {
+    fill: rgba(0, 155, 71, 1);
+}
+
+@media (max-width: 780px) {
+    .apartment-info__metro {
+        display: none;
+    }
+}
+
+
+/*  apartment object-type  */
+
+
+.apartment-object-type-container {
+    display: flex;
+    justify-content: start;
+    gap: 4px;
+    width: 100%;
+    margin: 64px 0;
+
+}
+
+.apartment-object-type__item {
+    padding: 8px 30px 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.apartment-object-type__item p {
+    color: rgba(17, 34, 51, 0.35);
+}
+
+.apartment-object-type__item__active {
+    padding: 8px 30px 5px;
+    background: rgba(17, 34, 51, 0.06);
+    border-radius: 16px;
+}
+
+.apartment-object-type__item__active p {
+    color: rgba(17, 34, 51, 1);
+}
+
+@media (max-width: 1131px) {
+    .apartment-object-type-container {
+        overflow-x: auto;
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 660px) {
+    .apartment-object-type-container {
+        gap: 4px;
+        margin: 28px 0;
+    }
+}
+
+
+/*  Apartments - список квартир  */
+
+
+.apartment-apartments-container {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.apartment-apartments__title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.apartment-apartments__flat-list__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment-apartments__flat-list__content {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    max-height: 400px;
+    padding-left: 16px;
+    margin-top: 24px;
+    overflow-y: auto;
+}
+
+.apartment-apartments__flat-list__title {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin-left: -16px;
+}
+
+.apartment-apartments__flat-list__title__item {
+    display: flex;
+    flex: 1 25%;
+}
+
+.apartment-apartments__flat-list {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.apartment-apartments__flat-list__item {
+    display: flex;
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    margin-left: -16px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.apartment-apartments__flat-list__item:hover {
+    background: rgba(229, 245, 237, .6);
+}
+
+.apartment-apartments__flat-list__item__active {
+    background: rgba(229, 245, 237, 1);
+}
+
+.apartment-apartments__flat-list__item p,
+.apartment-apartments__flat-list__item a {
+    display: flex;
+    flex: 1 25%;
+}
+
+.apartment-apartments__image {
+    width: 100%;
+    max-width: 460px;
+    margin-top: 16px;
+    height: 280px;
+    position: relative;
+    border: 1px solid rgba(55, 110, 164, 0.06);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.apartment-apartments__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.apartment-apartments__show-all-flats {
+    margin-top: 20px;
+}
+
+.apartment-apartments__flat-list__mobile__container {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.apartment-apartments__flat-list__mobile__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.flat-list__mobile__item__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.flat-list__mobile__item__counter__container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width: 1131px) {
+    .apartment-apartments__flat-list__container {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .apartment-apartments__flat-list__mobile__container {
+        display: flex;
+    }
+    .apartment-apartments-container {
+        margin: 28px 0;
+    }
+
+    .rc-filters__content__filters,
+    .apartment-apartments__flat-list__container,
+    .apartment-apartments__show-all-flats {
+        display: none;
+    }
+}
+
+
+/*  mortgage  */
+
+
+.apartment-mortgage-container {
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.apartment-mortgage__title {
+    width: 100%;
+    max-width: 840px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative
+}
+
+.apartment-mortgage__title .button__secondary {
+    width: unset;
+    padding: 13px 20px 11px;
+
+}
+
+.apartment-mortgage__tab-bar {
+    display: flex;
+    gap: 40px;
+    padding: 20px 20px 2px;
+    overflow-x: auto;
+    margin: 0 -20px;
+}
+
+.apartment-mortgage__tab-bar__item p {
+    color: rgba(17, 34, 51, 0.35);
+}
+
+.apartment__tab-bar__item__active {
+    color: rgba(0, 155, 71, 1);
+    text-decoration-line: underline;
+    text-decoration-color: rgba(0, 155, 71, 1);
+    text-decoration-style: solid;
+    text-underline-offset: 0.5em;
+}
+
+.apartment__tab-bar__item__active p {
+    color: rgba(0, 155, 71, 1);
+}
+
+.apartment-mortgage__table {
+    padding: 25px 0 0;
+    box-sizing: border-box;
+    margin: 0 -20px;
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+    transition: 1s max-height;
+}
+
+.apartment-mortgage__table__body__bottom {
+    width: 100%;
+    height: 28%;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.apartment-mortgage__table table {
+    width: 100%;
+    max-width: 840px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.apartment-mortgage__table__column {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.apartment-mortgage__table__info__icon {
+    position: relative;
+    cursor: pointer;
+}
+
+td, th {
+    padding: 20px 16px;
+}
+
+.table-headers th:not(:first-child, :last-child),
+td:not(:first-child, :last-child) {
+    border-left: 1px solid #ECF0F1;
+    border-right: 1px solid #ECF0F1;
+}
+
+.apartment-mortgage__table__body td {
+    padding: 20px 16px;
+}
+
+.mobile-header__container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.mobile-header__container__bank {
+    width: 100%;
+    align-items: center;
+}
+
+.mobile-header{
+    display: none;
+}
+
+.apartment-mortgage__show-all {
+    padding-top: 20px;
+}
+
+@media (max-width: 780px) {
+    .apartment-mortgage__table__body__bottom {
+        display: none;
+    }
+
+    .apartment-mortgage__table__body tr {
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+
+    .apartment-mortgage-container {
+        margin: 0 0 28px;
+    }
+
+    td, th,
+    .apartment-mortgage__table__body td {
+        padding: 10px 0 0;
+    }
+
+    .apartment-mortgage__table__body td:first-child {
+        padding: 0 0 10px;
+    }
+
+    .apartment-mortgage__table__body tr .button__green {
+        margin-top: 12px;
+    }
+
+    .apartment-mortgage__table {
+        max-height: 450px;
+    }
+
+    .apartment-mortgage__table::after,
+    .apartment-mortgage__show-all {
+        display: none;
+    }
+
+    .mobile-header{
+        display: flex;
+    }
+
+    .table-headers {
+        display: none;
+    }
+
+    .table-headers th:not(:first-child, :last-child),
+    td:not(:first-child, :last-child) {
+        border-left: 0 solid;
+        border-right: 0 solid;
+    }
+
+    .apartment-mortgage__table__body {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        overflow-x: auto;
+        width: calc(100vw);
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .apartment-mortgage__table__body tr {
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+
+        width: 248px;
+        min-width: 248px;
+        background: rgba(55, 110, 164, 0.06);
+    }
+}
+
+
+/*  apartment-description__title  */
+
+
+.apartment-description__fast-info {
+    padding-bottom: 4px;
+}
+
+.apartment-description__title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.apartment-description__builder {
+    padding: 10px 0 8px;
+}
+
+.apartment-description__fast-info {
+    display: flex;
+    gap: 12px;
+}
+
+.apartment-description__fast-info__container {
+    width: 100%;
+    max-width: 220px;
+}
+
+.apartment-description__fast-info__item {
+    cursor: pointer;
+    width: 100%;
+    max-width: 220px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: rgba(55, 110, 164, 0.06);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.apartment-description__fast-info__item__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.apartment-description__fast-info__item__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.apartment-description__fast-info__item__content p:first-child {
+    margin-bottom: -6px;
+}
+
+.apartment-description__tab-bar {
+    display: flex;
+    gap: 40px;
+    padding: 28px 0 40px;
+}
+
+.apartment__tab-bar__item p {
+    color: rgba(17, 34, 51, 0.35);
+}
+
+.apartment__tab-bar__item__active {
+    color: rgba(0, 155, 71, 1);
+    text-decoration-line: underline;
+    text-decoration-color: rgba(0, 155, 71, 1);
+    text-decoration-style: solid;
+    text-underline-offset: 0.5em;
+}
+
+.apartment__tab-bar__item__active p {
+    color: rgba(0, 155, 71, 1);
+}
+
+@media (max-width: 780px) {
+    .apartment-description__builder,
+    .apartment-description__fast-info {
+        display: none;
+    }
+
+    .apartment-description__tab-bar {
+        padding: 20px 0 0;
+    }
+}
+
+
+/*  Более подробное описание объекта apartment-description__paragraph */
+
+.apartment-description__paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 744px;
+    width: 100%;
+    padding: 0 0 85px;
+}
+
+.apartment-description__paragraph__content {
+    max-height: 78px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0 4px;
+}
+
+.apartment-description__paragraph__content p {
+    position: relative;
+}
+
+.apartment-description__paragraph__content__bottom {
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+
+@media (max-width: 780px) {
+    .apartment-description__paragraphs {
+        padding: 10px 0 28px;
+    }
+}
+
+
+/*  Геопозиция объекта недвижимости  */
+
+
+.apartment-geo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 81px;
+    width: 100%;
+}
+
+.apartment-geo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apartment-geo__map {
+    width: 100%;
+    height: 412px;
+    border-radius: 20px;
+    background: #F2F2F2;
+}
+
+.apartment-geo__address {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    gap: 1px;
+}
+
+.apartment-geo__metro {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 780px) {
+    .apartment-geo-container {
+        margin: 0 0 28px;
+    }
+
+    .apartment-geo__map {
+        height: 250px;
+    }
+
+    .apartment-geo__metro {
+        gap: 8px;
+        flex-direction: column;
+    }
+}
+
+
+/*  Ближайшие жилые комплексы  */
+
+
+.apartment-nearest-complex-container {
+    width: 100%;
+    height: 639px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+    background: rgba(55, 110, 164, 0.06);
+    overflow-x: hidden;
+    position: relative;
+    padding: 0 0 97px;
+    box-sizing: border-box;
+}
+
+.apartment-nearest-complex-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.rc-cards-min-swiper__navigation {
+    width: 92px;
+    height: 44px;
+    position: relative;
+    display: flex;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+    background: white;
+    border-radius: 20px;
+}
+
+.swiper-button-prev {
+    left: 0 !important;
+}
+
+.swiper-button-next {
+    right: 0 !important;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: 5px !important;
+    height: 10px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: none !important;
+}
+
+.apartment-nearest-complex__cards {
+    padding: 0 calc((100% - 1131px) / 2);
+}
+
+@media (max-width: 1131px) {
+    .apartment-nearest-complex__cards {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .rc-cards-min-swiper__navigation {
+        display: none;
+    }
+
+    .rc-cards-min-container__content {
+        overflow-y: scroll;
+    }
+}
+
+
+/*  Карточка Похожих квартир */
+
+
+.swiper {
+    width: 300px;
+    max-height: 240px;
+}
+
+.rc-apartment__image .swiper-slide {
+    max-height: 240px;
+}
+
+.rc-apartment-min {
+    min-width: 340px;
+    max-width: 340px;
+    height: 434px;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.rc-apartment__image {
+    position: relative;
+    border: 1px solid rgba(55, 110, 164, 0.06);
+    border-radius: 12px;
+}
+
+.rc-apartment__image__logo {
+    position: absolute;
+    z-index: 11;
+    top: 13px;
+    left: 13px;
+
+    width: 42px;
+    height: 42px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.rc-logo {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(42, 84, 126, 0.16);
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.rc-apartment__image__rc {
+    overflow: hidden;
+    width: 100%;
+    max-width: 240px;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.5s height;
+}
+
+.rc-apartment__image__rc img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.rc-apartment__content:hover .rc-apartment__image__rc {
+    height: 200px;
+}
+
+.rc-apartment__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 28px 24px 24px;
+    box-sizing: border-box;
+}
+
+.rc-apartment__content__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-apartment__content__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 60%;
+    margin-top: 4px;
+}
+
+.rc-apartment__content__list__mobile {
+    display: none;
+}
+
+.rc-apartment__content__list__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-apartment__content__list__row p,
+.rc-apartment__content__list__row a {
+    display: flex;
+    flex: 1 33%;
+}
+
+.rc-apartment__content__metro {
+    margin-top: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-apartment__content__metro__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.apartment-info__metro__icons__item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.apartment-info__metro__icon-metro,
+.apartment-info__metro__on-foot {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.swiper__hover-section__container {
+    position: absolute;
+    display: flex;
+    top: 0;
+
+    z-index: 10;
+}
+
+.rc-apartment__content__metro__mobile {
+    display: none;
+}
+
+.metro-icon__green svg path {
+    fill: rgba(0, 155, 71, 1);
+}
+
+.rc-apartment__content__buttons {
+    margin-top: 5px;
+}
+
+.rc-apartment__content__list__mobile {
+    display: flex;
+}
+
+.rc-apartment__content__list,
+.rc-apartment__content__metro,
+.rc-apartment__content__labels,
+.rc-apartment__content__title:nth-child(2) {
+    display: none;
+}
+
+.rc-apartment__content__metro__mobile {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.rc-apartment__content {
+    margin-top: 20px;
+    padding: 0;
+    gap: 4px;
+}
+
+.rc-apartment__image__rc {
+    max-width: 100%;
+}
+
+@media (max-width: 780px) {
+    .apartment-nearest-complex-container {
+        overflow-x: hidden;
+        position: relative;
+        height: 550px;
+        gap: 20px;
+    }
+
+    .rc-apartment__content__title p {
+        font-size: 20px;
+    }
+}

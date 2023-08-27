@@ -1,0 +1,765 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../common.css">
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Apartment RC</title>
+</head>
+<body>
+    <div class="list-container">
+        <div class="header-upper">
+            <div class="header-upper__content content-border">
+                <div class="header-upper__about">
+                    <a href="#" class="button title__link title__small title__gray">
+                      О компании
+                    </a>
+
+                    <a href="#" class="button title__link title__small title__gray">
+                        Контакты
+                    </a>
+                </div>
+
+                <div class="header-upper__geo">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.48615 14.3983C3.70234 8.91292 3 8.34995 3 6.33398C3 3.57255 5.23857 1.33398 8 1.33398C10.7614 1.33398 13 3.57255 13 6.33398C13 8.34995 12.2977 8.91292 8.51385 14.3983C8.26555 14.757 7.73443 14.757 7.48615 14.3983ZM8 8.41732C9.1506 8.41732 10.0833 7.48458 10.0833 6.33398C10.0833 5.18338 9.1506 4.25065 8 4.25065C6.8494 4.25065 5.91667 5.18338 5.91667 6.33398C5.91667 7.48458 6.8494 8.41732 8 8.41732Z" fill="#173B5E" fill-opacity="0.35"/>
+                    </svg>
+
+                    <p class="button title__small title__gray">
+                        Москва и область
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="header-container content-border">
+                <div class="horizontal gap-3">
+                    <div class="burger-menu button">
+                        <img src="../assets/burger-menu.svg" alt="burger menu">
+                    </div>
+
+                    <div class="logotype">
+                        <img src="../assets/logotype.svg" alt="logotype">
+                    </div>
+                </div>
+
+                <div class="header-content">
+                    <ul>
+                        <li class="title__light header-nav__tab header-nav__building button">
+                            <p class="title__light">
+                                Недвижимость
+                            </p>
+
+                            <div class="header-content__icon__arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64645 4.14645C2.84171 3.95118 3.15829 3.95118 3.35355 4.14645L6 6.79289L8.64645 4.14645C8.84171 3.95118 9.15829 3.95118 9.35355 4.14645C9.54882 4.34171 9.54882 4.65829 9.35355 4.85355L6.35355 7.85355C6.15829 8.04882 5.84171 8.04882 5.64645 7.85355L2.64645 4.85355C2.45118 4.65829 2.45118 4.34171 2.64645 4.14645Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="title__light header-nav__tab header-nav__mortgage button">
+                            <p class="title__light">
+                                Ипотека
+                            </p>
+
+                            <div class="header-content__icon__arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64645 4.14645C2.84171 3.95118 3.15829 3.95118 3.35355 4.14645L6 6.79289L8.64645 4.14645C8.84171 3.95118 9.15829 3.95118 9.35355 4.14645C9.54882 4.34171 9.54882 4.65829 9.35355 4.85355L6.35355 7.85355C6.15829 8.04882 5.84171 8.04882 5.64645 7.85355L2.64645 4.85355C2.45118 4.65829 2.45118 4.34171 2.64645 4.14645Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="title__light header-nav__tab header-nav__calc button">
+                            <p class="title__light">
+                                Калькуляторы
+                            </p>
+
+                            <div class="header-content__icon__arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64645 4.14645C2.84171 3.95118 3.15829 3.95118 3.35355 4.14645L6 6.79289L8.64645 4.14645C8.84171 3.95118 9.15829 3.95118 9.35355 4.14645C9.54882 4.34171 9.54882 4.65829 9.35355 4.85355L6.35355 7.85355C6.15829 8.04882 5.84171 8.04882 5.64645 7.85355L2.64645 4.85355C2.45118 4.65829 2.45118 4.34171 2.64645 4.14645Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="title__light header-nav__tab header-nav__army button">
+                            <p class="title__light">
+                                Военнослужащим
+                            </p>
+
+                            <div class="header-content__icon__arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64645 4.14645C2.84171 3.95118 3.15829 3.95118 3.35355 4.14645L6 6.79289L8.64645 4.14645C8.84171 3.95118 9.15829 3.95118 9.35355 4.14645C9.54882 4.34171 9.54882 4.65829 9.35355 4.85355L6.35355 7.85355C6.15829 8.04882 5.84171 8.04882 5.64645 7.85355L2.64645 4.85355C2.45118 4.65829 2.45118 4.34171 2.64645 4.14645Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="header-contacts">
+                        <div class="header-contacts__icons">
+                            <div class="button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.7154 3.70614C14.9316 2.18599 12.2787 2.45942 10.6413 4.14884L10.0001 4.80963L9.35881 4.14884C7.72473 2.45942 5.06853 2.18599 3.28471 3.70614C1.24048 5.4509 1.13306 8.58235 2.96245 10.4736L9.26116 16.9774C9.66805 17.3973 10.3288 17.3973 10.7357 16.9774L17.0344 10.4736C18.8671 8.58235 18.7597 5.4509 16.7154 3.70614Z" fill="#143352" fill-opacity="0.65"/>
+                                </svg>
+                            </div>
+
+                            <div class="button">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1052 15.0754L13.86 11.8303C13.7136 11.6838 13.515 11.6024 13.3067 11.6024H12.7762C13.6745 10.4535 14.2083 9.0083 14.2083 7.43619C14.2083 3.69632 11.178 0.666016 7.43814 0.666016C3.69827 0.666016 0.667969 3.69632 0.667969 7.43619C0.667969 11.1761 3.69827 14.2064 7.43814 14.2064C9.01025 14.2064 10.4554 13.6726 11.6044 12.7742V13.3048C11.6044 13.5131 11.6858 13.7116 11.8322 13.8581L15.0774 17.1032C15.3833 17.4092 15.8781 17.4092 16.1808 17.1032L17.1019 16.1821C17.4079 15.8761 17.4079 15.3814 17.1052 15.0754ZM7.43814 11.6024C5.13693 11.6024 3.27188 9.74065 3.27188 7.43619C3.27188 5.13498 5.13368 3.26993 7.43814 3.26993C9.73935 3.26993 11.6044 5.13173 11.6044 7.43619C11.6044 9.7374 9.7426 11.6024 7.43814 11.6024Z" fill="#143352" fill-opacity="0.65"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="header-contacts__phone">
+                            <p class="title__extra-medium__bold">
+                                +7 912 992 53 84
+                            </p>
+
+                            <p class="button title__link title__small__bold title__green">
+                                Заказать звонок
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-navigation">
+            <div class="header-navigation__content content-border">
+                <p class="button title__light title__gray">
+                    Недвижимость
+
+                    <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7L4 4L1 1" stroke="#143352" stroke-opacity="0.65"/>
+                    </svg>
+                </p>
+
+                <p class="button title__light title__gray">
+                  Новостройки Москвы
+
+                    <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7L4 4L1 1" stroke="#143352" stroke-opacity="0.65"/>
+                    </svg>
+                </p>
+
+                <p class="button title__light title__gray">
+                  ЖК Новая Рига
+
+                    <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7L4 4L1 1" stroke="#143352" stroke-opacity="0.65"/>
+                    </svg>
+                </p>
+            </div>
+        </div>
+
+        <div class="rc-filters">
+            <div class="content-border">
+                <div class="rc-filters__content">
+                    <p class="title__large">
+                        72 квартиры в ЖК Новая Рига
+                    </p>
+
+                    <div class="rc-filters__content__filters">
+                        <div class="rc-filters__content__filters__main">
+                            <div class="rc-filters__content__filters__tab rc-filters__city">
+                                <p class="title__light title__gray ml-2">
+                                    Город
+                                </p>
+
+                                <div class="button__secondary rc-filters__city">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 3.5H12C11.45 3.5 11 3.95 11 4.5V6.11C11 6.11 11 6.11 11.01 6.12L16.01 10.62C16.64 11.18 17 12 17 12.85V13.5H19V15.5H17V17.5H19V19.5H17V21.5H20C20.55 21.5 21 21.05 21 20.5V4.5C21 3.95 20.55 3.5 20 3.5ZM15 7.5H13V5.5H15V7.5ZM19 11.5H17V9.5H19V11.5ZM19 7.5H17V5.5H19V7.5Z" fill="#173B5E" fill-opacity="0.35"/>
+                                            <path d="M15 20.4996V12.8496C15 12.5696 14.88 12.2996 14.67 12.1096L9.67 7.60961C9.48 7.42961 9.24 7.34961 9 7.34961C8.76 7.34961 8.52 7.43961 8.33 7.60961L3.33 12.1096C3.12 12.2896 3 12.5596 3 12.8496V20.4996C3 21.0496 3.45 21.4996 4 21.4996H6C6.55 21.4996 7 21.0496 7 20.4996V16.4996H11V20.4996C11 21.0496 11.45 21.4996 12 21.4996H14C14.55 21.4996 15 21.0496 15 20.4996Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Москва и область
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab">
+                                <p class="title__light title__gray ml-2">
+                                    Количество комнат
+                                </p>
+
+                                <div class="horizontal gap-1 rc-filters__count-of-rooms">
+                                    <div class="button__secondary">
+                                        <p class="title__light">
+                                            Студия
+                                        </p>
+                                    </div>
+
+                                    <div class="button__secondary button__int">
+                                        <p class="title__light">
+                                            1
+                                        </p>
+                                    </div>
+
+                                    <div class="button__secondary button__int">
+                                        <p class="title__light">
+                                            2
+                                        </p>
+                                    </div>
+
+                                    <div class="button__secondary button__int">
+                                        <p class="title__light">
+                                            3+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab rc-filters__ranged-price__container">
+                                <p class="title__light title__gray ml-2">
+                                    Цена, млн ₽
+                                </p>
+
+                                <div class="button__secondary rc-filters__ranged-price">
+                                    <div class="horizontal rc-filters__ranged-price__content">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 17.832V19.5C2 20.8789 5.35938 22 9.5 22C13.6406 22 17 20.8789 17 19.5V17.832C15.3867 18.9688 12.4375 19.5 9.5 19.5C6.5625 19.5 3.61328 18.9688 2 17.832ZM14.5 7C18.6406 7 22 5.87891 22 4.5C22 3.12109 18.6406 2 14.5 2C10.3594 2 7 3.12109 7 4.5C7 5.87891 10.3594 7 14.5 7ZM2 13.7344V15.75C2 17.1289 5.35938 18.25 9.5 18.25C13.6406 18.25 17 17.1289 17 15.75V13.7344C15.3867 15.0625 12.4336 15.75 9.5 15.75C6.56641 15.75 3.61328 15.0625 2 13.7344ZM18.25 14.1641C20.4883 13.7305 22 12.9258 22 12V10.332C21.0938 10.9727 19.7617 11.4102 18.25 11.6797V14.1641ZM9.5 8.25C5.35938 8.25 2 9.64844 2 11.375C2 13.1016 5.35938 14.5 9.5 14.5C13.6406 14.5 17 13.1016 17 11.375C17 9.64844 13.6406 8.25 9.5 8.25ZM18.0664 10.4492C20.4102 10.0273 22 9.19922 22 8.25V6.58203C20.6133 7.5625 18.2305 8.08984 15.7227 8.21484C16.875 8.77344 17.7227 9.52344 18.0664 10.4492Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <div class="form_control">
+                                            <div class="horizontal form_control_container gap-1">
+                                                <div class="title__light">от</div>
+                                                <div class="title__light form_control_container__time__input" id="fromInput">
+                                                    4
+                                                </div>
+                                                <!--  <input class="title__light form_control_container__time__input" type="text" id="fromInput" value="10" min="0" max="100"/>  -->
+                                            </div>
+
+                                            <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1684_22476)">
+                                                    <line x1="0.5" y1="11.5" x2="11.5" y2="11.5" stroke="#173B5E" stroke-opacity="0.35"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1684_22476">
+                                                        <rect width="11" height="24" fill="white" transform="translate(0.5)"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            <div class="horizontal form_control_container gap-1">
+                                                <div class="title__light">до</div>
+                                                <div class="title__light form_control_container__time__input" id="toInput">
+                                                    28
+                                                </div>
+                                                <!--  <input class="title__light form_control_container__time__input" type="text" id="toInput" value="30" min="0" max="100"/>  -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="range_container">
+                                        <div class="sliders_control">
+                                            <input id="fromSlider" type="range" value="10" min="0" max="100"/>
+                                            <input id="toSlider" type="range" value="30" min="0" max="100"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab rc-filters__place">
+                                <p class="title__light title__gray ml-2">
+                                    Площадь
+                                </p>
+
+                                <div class="button__secondary rc-filters__place">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 13.75H6.0625C5.88984 13.75 5.75 13.6102 5.75 13.4375V12.8125C5.75 12.6398 5.88984 12.5 6.0625 12.5H8.25V10H6.0625C5.88984 10 5.75 9.86016 5.75 9.6875V9.0625C5.75 8.88984 5.88984 8.75 6.0625 8.75H8.25V6.25H6.0625C5.88984 6.25 5.75 6.11016 5.75 5.9375V5.3125C5.75 5.13984 5.88984 5 6.0625 5H8.25V3.75C8.25 3.05977 7.69023 2.5 7 2.5H3.25C2.55977 2.5 2 3.05977 2 3.75V21.25C2 21.3582 2.03555 21.4547 2.06133 21.5547L8.25 15.3664V13.75ZM20.75 16.25H19.5V18.4375C19.5 18.6102 19.3602 18.75 19.1875 18.75H18.5625C18.3898 18.75 18.25 18.6102 18.25 18.4375V16.25H15.75V18.4375C15.75 18.6102 15.6102 18.75 15.4375 18.75H14.8125C14.6398 18.75 14.5 18.6102 14.5 18.4375V16.25H12V18.4375C12 18.6102 11.8602 18.75 11.6875 18.75H11.0625C10.8898 18.75 10.75 18.6102 10.75 18.4375V16.25H9.13398L2.94531 22.4387C3.04531 22.4645 3.14219 22.5 3.25 22.5H20.75C21.4402 22.5 22 21.9402 22 21.25V17.5C22 16.8098 21.4402 16.25 20.75 16.25Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Выбрать
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab rc-filters__date">
+                                <p class="title__light title__gray ml-2">
+                                    Срок сдачи
+                                </p>
+
+                                <div class="button__secondary rc-filters__date">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.25 20.625C3.25 21.6602 4.08984 22.5 5.125 22.5H18.875C19.9102 22.5 20.75 21.6602 20.75 20.625V10H3.25V20.625ZM5.75 13.125C5.75 12.7812 6.03125 12.5 6.375 12.5H10.125C10.4688 12.5 10.75 12.7812 10.75 13.125V16.875C10.75 17.2188 10.4688 17.5 10.125 17.5H6.375C6.03125 17.5 5.75 17.2188 5.75 16.875V13.125ZM18.875 5H17V3.125C17 2.78125 16.7188 2.5 16.375 2.5H15.125C14.7812 2.5 14.5 2.78125 14.5 3.125V5H9.5V3.125C9.5 2.78125 9.21875 2.5 8.875 2.5H7.625C7.28125 2.5 7 2.78125 7 3.125V5H5.125C4.08984 5 3.25 5.83984 3.25 6.875V8.75H20.75V6.875C20.75 5.83984 19.9102 5 18.875 5Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Выбрать
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rc-filters__content__filters__additional">
+                            <div class="rc-filters__content__filters__tab rc-filters__builder">
+                                <p class="title__light title__gray ml-2">
+                                    Застройщик
+                                </p>
+
+                                <div class="button__secondary rc-filters__builder">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 3.5H12C11.45 3.5 11 3.95 11 4.5V6.11C11 6.11 11 6.11 11.01 6.12L16.01 10.62C16.64 11.18 17 12 17 12.85V13.5H19V15.5H17V17.5H19V19.5H17V21.5H20C20.55 21.5 21 21.05 21 20.5V4.5C21 3.95 20.55 3.5 20 3.5ZM15 7.5H13V5.5H15V7.5ZM19 11.5H17V9.5H19V11.5ZM19 7.5H17V5.5H19V7.5Z" fill="#173B5E" fill-opacity="0.35"/>
+                                            <path d="M15 20.4996V12.8496C15 12.5696 14.88 12.2996 14.67 12.1096L9.67 7.60961C9.48 7.42961 9.24 7.34961 9 7.34961C8.76 7.34961 8.52 7.43961 8.33 7.60961L3.33 12.1096C3.12 12.2896 3 12.5596 3 12.8496V20.4996C3 21.0496 3.45 21.4996 4 21.4996H6C6.55 21.4996 7 21.0496 7 20.4996V16.4996H11V20.4996C11 21.0496 11.45 21.4996 12 21.4996H14C14.55 21.4996 15 21.0496 15 20.4996Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Москва и область
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab rc-filters__banks">
+                                <p class="title__light title__gray ml-2">
+                                    Банки
+                                </p>
+
+                                <div class="button__secondary rc-filters__banks">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.4444 10.8894H20.4201C20.1145 10.1949 19.67 9.58033 19.1214 9.06642L19.7777 6.44479H18.6665C17.6457 6.44479 16.7428 6.91356 16.1317 7.63581C15.8678 7.59761 15.6074 7.55595 15.3331 7.55595H10.8885C8.20085 7.55595 5.96118 9.46574 5.4438 12.0006H3.94374C3.42983 12.0006 3.02356 11.5318 3.12773 11.0005C3.20413 10.6047 3.57567 10.3338 3.97846 10.3338H4.01318C4.12777 10.3338 4.22153 10.2401 4.22153 10.1255V9.43102C4.22153 9.31643 4.12777 9.22268 4.01318 9.22268C3.02356 9.22268 2.14158 9.93104 2.01658 10.9102C1.8638 12.0978 2.78744 13.1117 3.94374 13.1117H5.33268C5.33268 14.9243 6.21466 16.5181 7.55499 17.532V20.3342C7.55499 20.6398 7.805 20.8898 8.11057 20.8898H10.3329C10.6384 20.8898 10.8885 20.6398 10.8885 20.3342V18.6675H15.3331V20.3342C15.3331 20.6398 15.5831 20.8898 15.8886 20.8898H18.111C18.4165 20.8898 18.6665 20.6398 18.6665 20.3342V17.532C19.0763 17.223 19.4409 16.8584 19.7534 16.4452H21.4444C21.75 16.4452 22 16.1952 22 15.8896V11.445C22 11.1394 21.75 10.8894 21.4444 10.8894ZM16.9998 13.1117C16.6942 13.1117 16.4442 12.8617 16.4442 12.5561C16.4442 12.2506 16.6942 12.0006 16.9998 12.0006C17.3054 12.0006 17.5554 12.2506 17.5554 12.5561C17.5554 12.8617 17.3054 13.1117 16.9998 13.1117ZM10.8885 6.44479H15.3331C15.5206 6.44479 15.7046 6.45868 15.8852 6.47257C15.8852 6.46215 15.8886 6.45521 15.8886 6.44479C15.8886 4.60444 14.3955 3.11133 12.5552 3.11133C10.7148 3.11133 9.22172 4.60444 9.22172 6.44479C9.22172 6.51771 9.23908 6.58716 9.24256 6.66008C9.77036 6.52466 10.319 6.44479 10.8885 6.44479Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Москва и область
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab rc-filters__finishing">
+                                <p class="title__light title__gray ml-2">
+                                    Отделка
+                                </p>
+
+                                <div class="button__secondary rc-filters__finishing">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.2812 20.75H19.5V2.9375C19.5 2.41973 19.0803 2 18.5625 2H5.4375C4.91973 2 4.5 2.41973 4.5 2.9375V20.75H3.71875C3.45988 20.75 3.25 20.9599 3.25 21.2188V22H20.75V21.2188C20.75 20.9599 20.5401 20.75 20.2812 20.75ZM8.25 4.96875C8.25 4.70988 8.45988 4.5 8.71875 4.5H10.2812C10.5401 4.5 10.75 4.70988 10.75 4.96875V6.53125C10.75 6.79012 10.5401 7 10.2812 7H8.71875C8.45988 7 8.25 6.79012 8.25 6.53125V4.96875ZM8.25 8.71875C8.25 8.45988 8.45988 8.25 8.71875 8.25H10.2812C10.5401 8.25 10.75 8.45988 10.75 8.71875V10.2812C10.75 10.5401 10.5401 10.75 10.2812 10.75H8.71875C8.45988 10.75 8.25 10.5401 8.25 10.2812V8.71875ZM10.2812 14.5H8.71875C8.45988 14.5 8.25 14.2901 8.25 14.0312V12.4688C8.25 12.2099 8.45988 12 8.71875 12H10.2812C10.5401 12 10.75 12.2099 10.75 12.4688V14.0312C10.75 14.2901 10.5401 14.5 10.2812 14.5ZM13.25 20.75H10.75V17.4688C10.75 17.2099 10.9599 17 11.2188 17H12.7812C13.0401 17 13.25 17.2099 13.25 17.4688V20.75ZM15.75 14.0312C15.75 14.2901 15.5401 14.5 15.2812 14.5H13.7188C13.4599 14.5 13.25 14.2901 13.25 14.0312V12.4688C13.25 12.2099 13.4599 12 13.7188 12H15.2812C15.5401 12 15.75 12.2099 15.75 12.4688V14.0312ZM15.75 10.2812C15.75 10.5401 15.5401 10.75 15.2812 10.75H13.7188C13.4599 10.75 13.25 10.5401 13.25 10.2812V8.71875C13.25 8.45988 13.4599 8.25 13.7188 8.25H15.2812C15.5401 8.25 15.75 8.45988 15.75 8.71875V10.2812ZM15.75 6.53125C15.75 6.79012 15.5401 7 15.2812 7H13.7188C13.4599 7 13.25 6.79012 13.25 6.53125V4.96875C13.25 4.70988 13.4599 4.5 13.7188 4.5H15.2812C15.5401 4.5 15.75 4.70988 15.75 4.96875V6.53125Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Выбрать
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab rc-filters__place">
+                                <p class="title__light title__gray ml-1">
+                                    Площадь
+                                </p>
+
+                                <div class="button__secondary rc-filters__place">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 13.75H6.0625C5.88984 13.75 5.75 13.6102 5.75 13.4375V12.8125C5.75 12.6398 5.88984 12.5 6.0625 12.5H8.25V10H6.0625C5.88984 10 5.75 9.86016 5.75 9.6875V9.0625C5.75 8.88984 5.88984 8.75 6.0625 8.75H8.25V6.25H6.0625C5.88984 6.25 5.75 6.11016 5.75 5.9375V5.3125C5.75 5.13984 5.88984 5 6.0625 5H8.25V3.75C8.25 3.05977 7.69023 2.5 7 2.5H3.25C2.55977 2.5 2 3.05977 2 3.75V21.25C2 21.3582 2.03555 21.4547 2.06133 21.5547L8.25 15.3664V13.75ZM20.75 16.25H19.5V18.4375C19.5 18.6102 19.3602 18.75 19.1875 18.75H18.5625C18.3898 18.75 18.25 18.6102 18.25 18.4375V16.25H15.75V18.4375C15.75 18.6102 15.6102 18.75 15.4375 18.75H14.8125C14.6398 18.75 14.5 18.6102 14.5 18.4375V16.25H12V18.4375C12 18.6102 11.8602 18.75 11.6875 18.75H11.0625C10.8898 18.75 10.75 18.6102 10.75 18.4375V16.25H9.13398L2.94531 22.4387C3.04531 22.4645 3.14219 22.5 3.25 22.5H20.75C21.4402 22.5 22 21.9402 22 21.25V17.5C22 16.8098 21.4402 16.25 20.75 16.25Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Выбрать
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="rc-filters__content__filters__tab rc-filters__date">
+                                <p class="title__light title__gray ml-1">
+                                    Срок сдачи
+                                </p>
+
+                                <div class="button__secondary rc-filters__date">
+                                    <div class="horizontal gap-2">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.25 20.625C3.25 21.6602 4.08984 22.5 5.125 22.5H18.875C19.9102 22.5 20.75 21.6602 20.75 20.625V10H3.25V20.625ZM5.75 13.125C5.75 12.7812 6.03125 12.5 6.375 12.5H10.125C10.4688 12.5 10.75 12.7812 10.75 13.125V16.875C10.75 17.2188 10.4688 17.5 10.125 17.5H6.375C6.03125 17.5 5.75 17.2188 5.75 16.875V13.125ZM18.875 5H17V3.125C17 2.78125 16.7188 2.5 16.375 2.5H15.125C14.7812 2.5 14.5 2.78125 14.5 3.125V5H9.5V3.125C9.5 2.78125 9.21875 2.5 8.875 2.5H7.625C7.28125 2.5 7 2.78125 7 3.125V5H5.125C4.08984 5 3.25 5.83984 3.25 6.875V8.75H20.75V6.875C20.75 5.83984 19.9102 5 18.875 5Z" fill="#173B5E" fill-opacity="0.35"/>
+                                        </svg>
+
+                                        <p class="title__light no-whitespace">
+                                            Выбрать
+                                        </p>
+                                    </div>
+
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2333 8.2418L9.99998 11.4751L6.76665 8.2418C6.44165 7.9168 5.91665 7.9168 5.59165 8.2418C5.26665 8.5668 5.26665 9.0918 5.59165 9.4168L9.41665 13.2418C9.74165 13.5668 10.2667 13.5668 10.5917 13.2418L14.4166 9.4168C14.7416 9.0918 14.7416 8.5668 14.4166 8.2418C14.0916 7.92513 13.5583 7.9168 13.2333 8.2418Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rc-filters__content__filters-additional">
+                        <div id="rc-filters__button__all-filters" class="button__open__inline horizontal gap-1 button">
+                            <p class="title__green title__light">
+                                Показать все фильтры
+                            </p>
+
+                            <div class="rc-filters__button__all-filters__icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5867 6.19305L7.99999 8.77971L5.41332 6.19305C5.15332 5.93305 4.73332 5.93305 4.47332 6.19305C4.21332 6.45305 4.21332 6.87305 4.47332 7.13305L7.53332 10.193C7.79332 10.453 8.21332 10.453 8.47332 10.193L11.5333 7.13305C11.7933 6.87305 11.7933 6.45305 11.5333 6.19305C11.2733 5.93971 10.8467 5.93305 10.5867 6.19305Z" fill="#009B47"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="title__light title__gray button">
+                                Сбросить фильтры
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-border">
+            <div class="rc-apartments-container__filters">
+                <div class="button__secondary rc-cards-container__filters__price">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.875 18.25H11.375C11.2093 18.25 11.0503 18.3158 10.9331 18.433C10.8159 18.5502 10.75 18.7092 10.75 18.875V20.125C10.75 20.2907 10.8159 20.4497 10.9331 20.5669C11.0503 20.6841 11.2093 20.75 11.375 20.75H13.875C14.0408 20.75 14.1997 20.6841 14.317 20.5669C14.4342 20.4497 14.5 20.2907 14.5 20.125V18.875C14.5 18.7092 14.4342 18.5502 14.317 18.433C14.1997 18.3158 14.0408 18.25 13.875 18.25ZM8.87502 15.75H7.00002V3.875C7.00002 3.70924 6.93417 3.55027 6.81696 3.43306C6.69975 3.31585 6.54078 3.25 6.37502 3.25H5.12503C4.95927 3.25 4.80029 3.31585 4.68308 3.43306C4.56587 3.55027 4.50003 3.70924 4.50003 3.875V15.75H2.62503C2.07073 15.75 1.79026 16.4234 2.18401 16.8168L5.30901 20.5668C5.42621 20.6839 5.58512 20.7497 5.75081 20.7497C5.91649 20.7497 6.0754 20.6839 6.1926 20.5668L9.3176 16.8168C9.709 16.4242 9.43049 15.75 8.87502 15.75ZM18.875 8.24999H11.375C11.2093 8.24999 11.0503 8.31584 10.9331 8.43305C10.8159 8.55026 10.75 8.70923 10.75 8.87499V10.125C10.75 10.2907 10.8159 10.4497 10.9331 10.5669C11.0503 10.6841 11.2093 10.75 11.375 10.75H18.875C19.0408 10.75 19.1997 10.6841 19.3169 10.5669C19.4342 10.4497 19.5 10.2907 19.5 10.125V8.87499C19.5 8.70923 19.4342 8.55026 19.3169 8.43305C19.1997 8.31584 19.0408 8.24999 18.875 8.24999ZM16.375 13.25H11.375C11.2093 13.25 11.0503 13.3158 10.9331 13.433C10.8159 13.5503 10.75 13.7092 10.75 13.875V15.125C10.75 15.2907 10.8159 15.4497 10.9331 15.5669C11.0503 15.6841 11.2093 15.75 11.375 15.75H16.375C16.5408 15.75 16.6997 15.6841 16.8169 15.5669C16.9342 15.4497 17 15.2907 17 15.125V13.875C17 13.7092 16.9342 13.5503 16.8169 13.433C16.6997 13.3158 16.5408 13.25 16.375 13.25ZM21.375 3.25H11.375C11.2093 3.25 11.0503 3.31585 10.9331 3.43306C10.8159 3.55027 10.75 3.70924 10.75 3.875V5.125C10.75 5.29076 10.8159 5.44973 10.9331 5.56694C11.0503 5.68415 11.2093 5.75 11.375 5.75H21.375C21.5408 5.75 21.6997 5.68415 21.8169 5.56694C21.9342 5.44973 22 5.29076 22 5.125V3.875C22 3.70924 21.9342 3.55027 21.8169 3.43306C21.6997 3.31585 21.5408 3.25 21.375 3.25Z" fill="#173B5E" fill-opacity="0.35"/>
+                    </svg>
+
+                    <p class="title__light">
+                        По цене
+                    </p>
+                </div>
+            </div>
+
+            <div class="rc-apartments-container">
+                <div class="rc-apartments-container__content"></div>
+
+                <div class="contact-form contact-form__white">
+                    <div class="contact-form__title">
+                        <p class="title__medium__xx">
+                            Выгода с Повоенке
+                        </p>
+                    </div>
+
+                    <div class="horizontal gap-3">
+                        <div class="label">
+                            Скидка 10%
+                        </div>
+                        <div class="label">
+                            Бесплатное оформление
+                        </div>
+                    </div>
+
+                    <div class="contact-form__contacts">
+                        <div class="contact-form__contacts__icon">
+                            <svg width="34" height="26" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="14.1943" y="2.79492" width="11.0659" height="20.0336" rx="3.52444" transform="rotate(45 14.1943 2.79492)" fill="url(#paint0_linear_153_6436)"/>
+                                <rect x="8.84668" y="7.95312" width="11.0659" height="24.4659" rx="3.31772" transform="rotate(-45 8.84668 7.95312)" fill="#009B47"/>
+                                <path d="M22.104 10.8477L22.7056 12.6993H24.6526L23.0775 13.8437L23.6791 15.6953L22.104 14.5509L20.5289 15.6953L21.1306 13.8437L19.5555 12.6993H21.5024L22.104 10.8477Z" fill="white"/>
+                                <path d="M26.4429 14.9316L27.0445 16.7833H28.9914L27.4163 17.9276L28.018 19.7793L26.4429 18.6349L24.8678 19.7793L25.4694 17.9276L23.8943 16.7833H25.8413L26.4429 14.9316Z" fill="white"/>
+                                <circle cx="16.4896" cy="7.65756" r="2.16928" fill="white"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_153_6436" x1="19.7273" y1="2.79492" x2="19.7273" y2="22.8285" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#085C2E"/>
+                                        <stop offset="1" stop-color="#009B47"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="contact-form__contacts__content">
+                            <p class="title__small title__gray">
+                                Менеджер
+                            </p>
+
+                            <p class="title__medium__bold">
+                                +7 912 992 53 84
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__input">
+                        <input placeholder="+7 000 000 00 00" class="title__light title__gray">
+                    </div>
+
+                    <div class="contact-form__button button__green button__center">
+                        Заказать звонок
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="content-border">
+                <div class="footer__contact-form">
+                    <div class="footer__contact-form__promo">
+                        <p class="title__medium__xx">
+                            Будьте в курсе
+                        </p>
+
+                        <p class="title__light title__gray">
+                            Подпишитесь на рассылку ПоВоенке, чтобы получать выгодные предложения первыми
+                        </p>
+                    </div>
+
+                    <div class="footer__contact-form__input">
+                        <div class="contact-form__input">
+                            <input placeholder="Введите email" class="title__light title__gray">
+                        </div>
+
+                        <div class="contact-form__button button__green button__center">
+                            Подписаться
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__border"></div>
+            <div class="content-border">
+                <div class="footer__container">
+                    <div class="footer__container__col__contacts">
+                        <img src="../assets/logotype-grey.svg" alt="logotype" height="46" width="181">
+
+                        <div class="footer__container__phone">
+                            <div class="footer__container__phone__content">
+                                <p class="title__extra-medium__bold">
+                                    +7 912 992 53 84
+                                </p>
+                                <p class="title__small__bold title__gray">
+                                    Пн-Пт 09:00-18:00
+                                </p>
+                            </div>
+                            <div class="social_networks">
+                                <div class="social_network">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                                <div class="social_network">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title__extra-medium__bold">
+                            Соцсети
+                        </p>
+
+                        <div class="social_networks social_networks_bottom">
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="title__light title__gray footer__ooo">
+                            © 2022 Общество с ограниченной ответственностью «поВоенке» Москва, Хорошёвское шоссе, 38к1, 5 этаж, офис 521, ОГРН 5147746388543 ИНН 7725849789.
+                            <a href="#" class="title__link title__gray">
+                                Политика конфиденциальности.
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="footer__container__col">
+                        <div class="footer__container__col__menu">
+                            <p class="title__extra-medium__bold">Купить</p>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Каталог квартир
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Каталог новостроек
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Вторичное жильё
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Застройщики
+                            </a>
+                        </div>
+
+                        <div class="footer__container__col__menu">
+                            <p class="title__extra-medium__bold">Ипотека</p>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Список банков
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Рефинансирование
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__container__col">
+                        <div class="footer__container__col__menu">
+                            <p class="title__extra-medium__bold">Калькуляторы</p>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Сумма накоплений
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Выгода от рефинансирования
+                            </a>
+                        </div>
+
+                        <div class="footer__container__col__menu">
+                            <p class="title__extra-medium__bold">Военнослужащим</p>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                База знаний
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Вопросы и ответы
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Акции
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__container__col">
+                        <div class="footer__container__col__menu">
+                            <p class="title__extra-medium__bold">О компании</p>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Контакты
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                О нас
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Новости
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Наша команда
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Отзывы
+                            </a>
+
+                            <a class="title__link title__gray title__light" href="#">
+                                Гарантии
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__ooo__mobile">
+                        <p class="title__medium">
+                            Соцсети
+                        </p>
+
+                        <div class="social_networks">
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+
+                            <div class="social_network">
+                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3009 6.46938C6.40013 4.35919 9.79476 2.95703 11.4994 2.27678C16.3509 0.34707 17.3707 0.0138828 18.0264 0C18.1721 0 18.4926 0.0277658 18.7111 0.194359C18.8859 0.333187 18.9297 0.513664 18.9588 0.652491C18.9879 0.791319 19.0171 1.08286 18.9879 1.30498C18.7257 3.94271 17.5893 10.3427 17.0065 13.2858C16.7588 14.5353 16.2781 14.9518 15.8118 14.9934C14.792 15.0767 14.0198 14.3548 13.0437 13.744C11.4994 12.786 10.6398 12.1891 9.13914 11.2451C7.40541 10.1622 8.52723 9.56524 9.51794 8.59344C9.78019 8.34355 14.2529 4.45637 14.3404 4.1093C14.3549 4.06766 14.3549 3.90106 14.2529 3.81776C14.151 3.73447 14.0053 3.76223 13.8887 3.79C13.7284 3.81777 11.2808 5.37264 6.51668 8.44073C5.81736 8.89886 5.19088 9.12099 4.62269 9.10711C3.99621 9.09322 2.80153 8.77392 1.89824 8.49626C0.805552 8.16308 -0.068601 7.9826 0.00424505 7.39952C0.0479527 7.0941 0.485029 6.78868 1.3009 6.46938Z" fill="#173B5E" fill-opacity="0.35"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="title__light title__gray">
+                            © 2022 Общество с ограниченной ответственностью «поВоенке» Москва, Хорошёвское шоссе, 38к1, 5 этаж, офис 521, ОГРН 5147746388543 ИНН 7725849789.
+                            <a href="#" class="title__link title__gray">
+                                Политика конфиденциальности.
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--  rc-filters: Открыть все фильтры  -->
+    <script type="module" src="../scripts/filters.js"></script>
+
+    <!--  rc-filters: Фильтер с двумя ползунками  -->
+    <script type="module" src="./ranged-filter.js"></script>
+
+    <!--  Swiper slider  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--  rc-apartments: Добавление карточек, слайдера фотографий  -->
+    <script type="module" src="cards.js"></script>
+
+    <!--  header-navigation: подключаем выпадающее меню для шапки  -->
+    <script type="module" src="../scripts/header-navigation.js"></script>
+</body>
+</html>
